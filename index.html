@@ -36,8 +36,8 @@
             <div class="row">
                 <div class="col-12 p-5 text-center text-white">
                     <h1 class="mb-5">Lista di email generata randomicamente attraverso l'API di boolean:</h1>
-                    <ul class="text-start">
-                        <li v-for="(element, index) in emailList">{{emailList[index]}}</li>
+                    <ul v-if="emailList.length == 10" class="text-start">
+                        <li v-for="element in emailList">{{element}}</li>
                     </ul>
                 </div>
             </div>
